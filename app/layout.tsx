@@ -15,7 +15,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Santuario de Estética | Excelencia en Arroyo Hondo",
+  title: "Kalon Estética & Spa | Excelencia en Arroyo Hondo",
   description: "Un santuario diseñado para la mujer que domina su tiempo y exige resultados excepcionales. Cuidado de autor en un entorno de paz absoluta.",
 };
 

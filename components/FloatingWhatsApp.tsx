@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 export default function FloatingWhatsApp() {
-  const phoneNumber = "18290000000"; // Placeholder para que el usuario lo cambie
+  const phoneNumber = "18096678101";
   const message = encodeURIComponent(
-    "Hola Karina, deseo solicitar una evaluación privada para un tratamiento en el Santuario de Estética."
+    "Hola Kalon Estética & Spa, deseo solicitar una evaluación privada."
   );
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 

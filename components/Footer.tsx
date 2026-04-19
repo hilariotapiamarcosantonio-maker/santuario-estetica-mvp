@@ -8,53 +8,56 @@ export default function Footer() {
   return (
     <footer id="contacto" className="bg-foreground text-background py-20">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           <div className="md:col-span-2">
-            <div className="flex flex-col mb-8 text-accent">
-              <span className="text-2xl font-serif tracking-widest uppercase">
-                Santuario
+            <div className="flex flex-col mb-10 text-accent">
+              <span className="text-3xl font-serif tracking-[0.2em] uppercase">
+                Kalon
               </span>
-              <span className="text-[10px] uppercase tracking-[0.3em] font-sans -mt-1 opacity-70">
-                De Estética
+              <span className="text-[10px] uppercase tracking-[0.4em] font-sans mt-2 opacity-60">
+                Estética & Spa
               </span>
             </div>
-            <p className="max-w-md text-background/60 font-sans font-light leading-relaxed">
-              Reserva de espacio exclusiva vía Concierge Digital. <br />
-              Estamos ubicados en el corazón de Arroyo Hondo, Santo Domingo, 
-              listos para ofrecerle una experiencia de cuidado sin precedentes.
+            <p className="max-w-md text-background/50 font-sans font-light leading-relaxed text-sm">
+              Destino de excelencia en estética avanzada y bienestar capilar. <br />
+              Atención exclusiva bajo evaluación previa en el corazón de Arroyo Hondo, Santo Domingo.
             </p>
           </div>
 
           <div>
-            <h4 className="text-accent uppercase tracking-widest text-xs font-bold mb-6">Ubicación</h4>
+            <h4 className="text-accent uppercase tracking-[0.3em] text-[10px] font-black mb-8 underline underline-offset-8 decoration-accent/20">Ubicación</h4>
             <div className="flex items-start gap-4 text-background/60 text-sm font-light">
-              <MapPin className="w-5 h-5 text-accent shrink-0" />
-              <p>Arroyo Hondo, Santo Domingo, <br />República Dominicana</p>
+              <MapPin className="w-5 h-5 text-accent shrink-0 stroke-[1px]" />
+              <p className="leading-relaxed">Arroyo Hondo, <br />Santo Domingo, <br />República Dominicana</p>
             </div>
           </div>
 
           <div>
-            <h4 className="text-accent uppercase tracking-widest text-xs font-bold mb-6">Concierge</h4>
-            <ul className="space-y-4 text-background/60 text-sm font-light">
-              <li className="flex items-center gap-4">
-                <Phone className="w-5 h-5 text-accent" />
-                <span>WhatsApp Digital</span>
+            <h4 className="text-accent uppercase tracking-[0.3em] text-[10px] font-black mb-8 underline underline-offset-8 decoration-accent/20">Concierge</h4>
+            <ul className="space-y-6 text-background/60 text-sm font-light">
+              <li>
+                <a href="https://wa.me/18096678101" className="flex items-center gap-4 hover:text-accent transition-colors group">
+                  <Phone className="w-5 h-5 text-accent stroke-[1px]" />
+                  <span>WhatsApp Digital</span>
+                </a>
               </li>
-              <li className="flex items-center gap-4">
-                <Instagram className="w-5 h-5 text-accent" />
-                <span>@SantuarioEstetica</span>
+              <li>
+                <a href="https://www.instagram.com/kalonsthetic/" className="flex items-center gap-4 hover:text-accent transition-colors group">
+                  <Instagram className="w-5 h-5 text-accent stroke-[1px]" />
+                  <span>@kalonsthetic</span>
+                </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-12 border-t border-background/10 flex flex-col md:row justify-between items-center gap-6">
-          <p className="text-[10px] uppercase tracking-widest text-background/40">
-            &copy; {currentYear} Santuario de Estética. Todos los derechos reservados.
+        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+          <p className="text-[9px] uppercase tracking-[0.4em] text-white/30">
+            &copy; {currentYear} Kalon Estética & Spa. Reservados todos los derechos.
           </p>
-          <div className="flex gap-8 text-[10px] uppercase tracking-widest text-background/40">
+          <div className="flex gap-10 text-[9px] uppercase tracking-[0.4em] text-white/30">
             <a href="#" className="hover:text-accent transition-colors">Privacidad</a>
-            <a href="#" className="hover:text-accent transition-colors">Términos</a>
+            <a href="#" className="hover:text-accent transition-colors">Términos de Servicio</a>
           </div>
         </div>
       </div>

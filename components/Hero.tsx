@@ -22,42 +22,76 @@ export default function Hero() {
       <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl opacity-50 z-10" />
       <div className="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-accent/10 rounded-full blur-3xl opacity-30 z-10" />
 
-      <div className="relative z-20 max-w-5xl mx-auto px-6 text-center">
+      <div className="relative z-20 max-w-[1400px] mx-auto px-6 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
         >
-          <span className="inline-block text-accent uppercase tracking-[0.4em] mb-4 text-xs font-semibold">
-            Bienvenida al Santuario
-          </span>
+          <motion.span 
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 }
+            }}
+            className="inline-block text-accent uppercase tracking-[0.6em] mb-6 text-xs font-bold"
+          >
+            Bienvenida a Kalon
+          </motion.span>
           
-          <h1 className="text-4xl md:text-7xl font-serif text-foreground leading-[1.1] mb-8">
-            La Excelencia en Estética Avanzada <br />
-            <span className="italic text-accent">llega a Arroyo Hondo.</span>
-          </h1>
+          <motion.h1 
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: { opacity: 1, y: 0 }
+            }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="text-5xl md:text-8xl lg:text-9xl font-serif text-foreground leading-[0.95] mb-10 tracking-tight"
+          >
+            Maestría en <br />
+            <span className="italic text-accent">Estética Avanzada.</span>
+          </motion.h1>
           
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-foreground/80 font-sans font-light leading-relaxed mb-12">
-            Un santuario diseñado para la mujer que domina su tiempo y exige resultados excepcionales. 
-            Cuidado de autor en un entorno de paz absoluta.
-          </p>
+          <motion.p 
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: { opacity: 1, y: 0 }
+            }}
+            className="max-w-3xl mx-auto text-lg md:text-2xl text-foreground font-sans font-light leading-relaxed mb-16 opacity-80"
+          >
+            Un destino de ultra-lujo diseñado para la mujer que exige resultados <br className="hidden md:block" />
+            excepcionales. Cuidado de autor en el corazón de Arroyo Hondo.
+          </motion.p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <motion.div 
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 }
+            }}
+            className="flex flex-col sm:flex-row gap-8 justify-center items-center"
+          >
             <motion.a
-              href="#evaluacion"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="px-10 py-5 bg-foreground text-background font-sans uppercase tracking-widest text-sm font-bold shadow-2xl hover:bg-accent transition-colors duration-500"
+              href="https://wa.me/18096678101"
+              whileHover={{ scale: 1.05, backgroundColor: "#C5A059", color: "#FAF9F6" }}
+              whileTap={{ scale: 0.95 }}
+              className="px-12 py-6 bg-primary text-background font-sans uppercase tracking-[0.3em] text-xs font-black shadow-2xl transition-all duration-500"
             >
-              Solicitar Evaluación Privada
+              Agendar Experiencia
             </motion.a>
             <a 
               href="#servicios" 
-              className="text-sm uppercase tracking-widest font-bold border-b border-accent/40 pb-1 hover:border-accent transition-all duration-300"
+              className="group text-xs uppercase tracking-[0.3em] font-black flex items-center gap-4 border-b border-accent/20 pb-2 hover:border-accent transition-all duration-300"
             >
               Explorar Servicios
+              <div className="w-6 h-[1px] bg-accent group-hover:w-12 transition-all duration-500" />
             </a>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
 
