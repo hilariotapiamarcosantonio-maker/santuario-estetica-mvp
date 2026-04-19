@@ -106,7 +106,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
         duration: 0.8,
         y: { type: "spring", stiffness: 300 }
       }}
-      className="group relative p-12 bg-white border border-accent/5 hover:border-accent/20 transition-all duration-500 shadow-sm hover:shadow-2xl cursor-pointer"
+      className="group relative p-12 bg-white border border-foreground/5 hover:border-foreground/30 transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer"
     >
       <div className="mb-10 p-5 bg-primary/5 w-fit group-hover:bg-accent group-hover:text-white transition-all duration-500 rounded-sm">
         <service.icon className="w-8 h-8 text-accent group-hover:text-white stroke-[1px] transition-colors" />
