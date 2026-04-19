@@ -52,9 +52,14 @@ export default function Footer() {
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-          <p className="text-[9px] uppercase tracking-[0.4em] text-white/30">
-            &copy; {currentYear} Kalon Estética & Spa. Reservados todos los derechos.
-          </p>
+          <div className="flex flex-col gap-2 items-center md:items-start">
+            <p className="text-[9px] uppercase tracking-[0.4em] text-white/30">
+              &copy; {currentYear} Kalon Estética & Spa. Reservados todos los derechos.
+            </p>
+            <p className="text-[8px] uppercase tracking-[0.6em] text-accent/40 font-light">
+              Digital Architecture by <span className="text-accent/60 font-bold">Marcos Hilario</span>
+            </p>
+          </div>
           <div className="flex gap-10 text-[9px] uppercase tracking-[0.4em] text-white/30">
             <a href="#" className="hover:text-accent transition-colors">Privacidad</a>
             <a href="#" className="hover:text-accent transition-colors">Términos de Servicio</a>
